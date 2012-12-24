@@ -1,0 +1,20 @@
+{
+  "name": "rainbow.js",  
+  "author": "jiin",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "version": "0.0.1",
+  "description": "library for converting in most famous colors schema",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  },
+  "scripts": {
+    "test": "mocha -R spec test/test.js"
+  },
+  "repository": "git://github.com/jiin/rainbow.js.git"
+}
