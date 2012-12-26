@@ -18,51 +18,48 @@ var Rainbow = require('rainbow');
 
 ## Methods
 
-To initialize new object use:
-```javascript
-var rainbow = new Rainbow();
-```
-
-Supported colors schema are:
+Supported colors schemas are:
 
 * __RGB__ ( Red Green Blue )
 * __hex RGB__
 * __HSV__ ( Hue Saturation Brightness )
 * __CMYK__ ( Cyan Magenta Yellow Key black )
 
+Examples of use:
+
 RGB to HSV:
 ```javascript
-rainbow.RGBtoHSV({ R: 0, G: 255, B: 127}); 
-// return { H: 150, S: 1, V: 255 }
+Rainbow.rgb({ R: 255, G: 0, B: 255 }).toHSV()
+// return { H: 300, S: 100, V: 100 }
 ```
 
 HSV to RGB:
 ```javascript
-rainbow.HSVtoRGB({ H: 150, S: 1, V: 1 });
+Rainbow.hsv({ H: 300, S: 100, V: 100 }).toRGB()
 // return { R: 0, G: 255, B: 127 }
 ```
 
 RGB to hex:
 ```javascript
-rainbow.RGBtoHex({ R: 255, G: 255, B: 255 });
+Rainbow.rgb({ R: 255, G: 255, B: 255 }).toHex()
 // return 'ffffff'
 ```
 
 hex to RGB:
 ```javascript
-rainbow.hexToRGB('ffffff');
+Rainbow.hex('ffffff').toRGB()
 // return { R: 255, G: 255, B: 255 }
 ```
 
 RGB to CMYK:
 ```javascript
-rainbow.RGBtoCMYK({ R: 255, G: 0, B: 255 });
-// return { C: 0, M: 255, Y: 0, K: -254 }
+Rainbow.rgb({ R: 255, G: 0, B: 255 }).toCMYK()
+// return { C: 0, M: 1, Y: 0, K: 0 }
 ```
 
 CMYK to RGB:
 ```javascript
-rainbow.CMYKtoRGB({ C: 0, M: 255, Y: 0, K: -254 });
+Rainbow.cmyk({ C: 0, M: 1, Y: 0, K: 0 }).toRGB()
 // return { R: 255, G: 0, B: 255 }
 ```
 
