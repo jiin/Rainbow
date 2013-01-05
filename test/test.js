@@ -55,9 +55,6 @@ describe('From hex', function() {
     expect( hex.cmyk ).to.eql({ c: 0, m: 0, y: 0, k: 0 });
     done();
   });
-<<<<<<< HEAD
-});
-=======
 });
 
 describe('From HSV', function() {
@@ -107,4 +104,3 @@ describe('From CMYK', function() {
     done();
   });
 });
->>>>>>> release 0.1.0
