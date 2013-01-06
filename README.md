@@ -37,7 +37,7 @@ console.log( test.hsv );
 HSV to RGB:
 ```javascript
 var test = new Rainbow({ h: 0, s: 0, v: 100 });
-console.log( test.hsv );
+console.log( test.rgb );
 > { r: 255, g: 255, b: 255 }
 ```
 
