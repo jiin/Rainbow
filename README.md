@@ -8,12 +8,12 @@
 
 Install this version via git:
 ```bash
-npm install git://github.com/jiin/Rainbow.git
+npm install rainbow.js
 ```
 
 And use in your node source:
 ```javascript
-var Rainbow = require('rainbow');
+var Rainbow = require('rainbow.js');
 ```
 
 ## Methods
