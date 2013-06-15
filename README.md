@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.org/jiin/Rainbow.png?branch=master)](https://travis-ci.org/jiin/Rainbow)
 
-Install this version via git:
+Install this version via npm:
 ```bash
 npm install rainbow.js
 ```
